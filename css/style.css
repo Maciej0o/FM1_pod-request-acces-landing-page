@@ -255,6 +255,11 @@ body {
     height: 4.6rem;
     width: 427px;
   }
+  .error {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
   .bgc-photo {
     background-image: url("../assets/mobile/image-host.jpg");
     background-size: 100%;
