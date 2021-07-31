@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #FFFFFF;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  background-color: #121725;
+}
+/*# sourceMappingURL=style.css.map */
