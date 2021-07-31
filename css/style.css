@@ -12,10 +12,148 @@ html {
 }
 
 body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: #FFFFFF;
   font-family: 'Chivo', sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   background-color: #121725;
+}
+
+.main {
+  margin-left: 3rem;
+  width: 1275px;
+  height: 640px;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.bgc-photo {
+  position: absolute;
+  height: 100%;
+  width: 888px;
+  top: 0;
+  right: 0;
+  background-image: url("../assets/desktop/image-host.jpg");
+  z-index: -1;
+}
+
+.container {
+  position: absolute;
+  padding-top: 8.8rem;
+  bottom: 0;
+  width: 723px;
+  height: 509px;
+  background-color: #121725;
+}
+
+.title {
+  font-size: 5.2rem;
+  font-weight: 300;
+  color: #54E6AF;
+  text-transform: uppercase;
+  line-height: 6.2rem;
+}
+
+.title span {
+  color: #FFFFFF;
+}
+
+.text {
+  width: 445px;
+  padding-top: 2.4rem;
+  color: #C2CBE5;
+  line-height: 2.8rem;
+}
+
+.form {
+  width: 427px;
+  height: 5.6rem;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin-top: 4rem;
+  background-color: #2C344B;
+}
+
+.form input {
+  padding-left: 3rem;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  margin: 0 0.5rem;
+  width: 16.2rem;
+  height: 4.6rem;
+  border-radius: 50px;
+  background-color: #54E6AF;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.form button:hover {
+  opacity: .9;
+}
+
+.error {
+  margin-top: 0.8rem;
+  margin-left: 3.2rem;
+  color: #b81717;
+  font-weight: normal;
+  height: 1.4rem;
+  font-size: 1.2rem;
+  color: transparent;
+}
+
+.social-logos {
+  margin-top: 4.2rem;
+  width: 53.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icon-dots {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 /*# sourceMappingURL=style.css.map */

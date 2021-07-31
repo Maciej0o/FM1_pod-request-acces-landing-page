@@ -1,7 +1,7 @@
 // COLORS
 $main-color: #54E6AF;
 $text-color: #FFFFFF;
-$text-drak: #C2CBE5;
+$text-dark: #C2CBE5;
 $background: #121725;
 $dark-grey: #2C344B;
 $light-grey: #5A668A;
@@ -19,9 +19,127 @@ html {
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     color: $text-color;
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
     font-size: 1.8rem;
     background-color: $background;
+
+}
+
+.main {
+    margin-left: 3rem;
+    width: 1275px;
+    height: 640px;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.bgc-photo {
+    position: absolute;
+    height: 100%;
+    width: 888px;
+    top: 0;
+    right: 0;
+    background-image: url('../assets/desktop/image-host.jpg');
+    z-index: -1;
+}
+
+.container {
+    position: absolute;
+    padding-top: 8.8rem;
+    bottom: 0;
+    width: 723px;
+    height: 509px;
+    background-color: $background;
+}
+
+.title {
+    font-size: 5.2rem;
+    font-weight: 300;
+    color: $main-color;
+    text-transform: uppercase;
+    line-height: 6.2rem;
+    span {
+        color: $text-color;
+    }
+}
+
+.text {
+    width: 445px;
+    padding-top: 2.4rem;
+    color: $text-dark;
+    line-height: 2.8rem;
+}
+
+.form {
+    width: 427px;
+    height: 5.6rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 4rem;
+    background-color: $dark-grey;
+
+    input {
+        padding-left: 3rem;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        color: $text-color;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    button {
+        margin: 0 0.5rem;
+        width: 16.2rem;
+        height: 4.6rem;
+        border-radius: 50px;
+        background-color: $main-color;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+}
+
+.error {
+    margin-top: 0.8rem;;
+    margin-left: 3.2rem;
+    color: rgb(184, 23, 23);
+    font-weight: normal;
+    height: 1.4rem;
+    font-size: 1.2rem;
+    color: transparent;
+}
+
+.social-logos {
+    margin-top: 4.2rem;
+    width: 53.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-dots {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
 }
